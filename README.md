@@ -2,13 +2,9 @@
 
 <h2 align="center"> Lambda Functions Caching machanism</h2>
 
-![PackageStatus](https://img.shields.io/pypi/status/lambda-cache) ![PyPI version](https://img.shields.io/pypi/v/lambda-cache) ![Downloads](https://img.shields.io/pypi/dw/lambda-cache)
+# Simple caching for AWS Lambda.
+The goal of the package is to provide a simple interface for caching, built specifically for AWS Lambda.
 
-![PythonSupport](https://img.shields.io/static/v1?label=python&message=3.6%20|%203.7%20|%203.8&color=blue?style=flat-square&logo=python) ![License: MIT](https://img.shields.io/github/license/keithrozario/lambda-cache) ![Documentation Status](https://readthedocs.org/projects/lambda-cache/badge/?version=latest)
-
-![Test](https://github.com/keithrozario/lambda-cache/workflows/Test/badge.svg?branch=release) [![Coverage Status](https://coveralls.io/repos/github/keithrozario/lambda-cache/badge.svg?branch=release)](https://coveralls.io/github/keithrozario/lambda-cache?branch=release) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/ad70a44cb3e54d7ba600edc5fa89635c)](https://www.codacy.com/manual/keithrozario/lambda-cache?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=keithrozario/lambda-cache&amp;utm_campaign=Badge_Grade) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) 
-
-# Introduction
 
 <p align="center"><img src='docs/images/lambda_cache.png'></p>
 
@@ -305,8 +301,7 @@ def s3_download_entry_name(event, context):
 _Note: we use the GetHead object call to verify the objects `last_modified_date`. This simplifies the IAM policy of the function, as it still only requires the `s3:GetObject` permission. However, this is still a GET requests, and will be charged as such, for smaller objects it might be cheaper to just download the object_
 
 # Credit
-thanks to : 
+* [Lambda Cache](https://lambda-cache.readthedocs.io/en/latest/#lambda-cache)
+
+Thanks to : 
 * [keithrozario](https://github.com/keithrozario/lambda-cache)
-inspired by:
-* [SSM-Cache](https://github.com/alexcasalboni/ssm-cache-python)
-* [middy](https://github.com/middyjs/middy)
