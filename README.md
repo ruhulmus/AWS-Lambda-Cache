@@ -305,3 +305,4 @@ _Note: we use the GetHead object call to verify the objects `last_modified_date`
 
 Thanks to : 
 * [keithrozario](https://github.com/keithrozario/lambda-cache)
+
